@@ -46,6 +46,10 @@ public class Apple implements Comparable<Apple> {
         return "green".equals(color);
     }
 
+    public boolean isRed() {
+        return "red".equals(color);
+    }
+
     @Override
     public String toString() {
         return "Apple{" +
