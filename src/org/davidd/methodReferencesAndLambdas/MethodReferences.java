@@ -1,14 +1,14 @@
 package org.davidd.methodReferencesAndLambdas;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import static java.util.Comparator.comparing;
 
 /**
  * Created by David on 10/14/2016.
@@ -35,11 +35,22 @@ public class MethodReferences {
         Function<Integer, Coffee> coffeeMaker = Coffee::new;
         Coffee c2 = coffeeMaker.apply(5);
 
+        BiFunction<Integer, String, Coffee> coffeeBiFunction = Coffee::new;
+        Coffee c3 = coffeeBiFunction.apply(5, "");
+
         Map<String, Function<Integer, Coffee>> barista = new HashMap<>();
         barista.put("barista1", Coffee::new);
         barista.put("barista2", Coffee::new);
 
-        Coffee c3 = barista.get("barista2").apply(3);
+        Coffee c4 = barista.get("barista2").apply(3);
+
+        System.out.println();
+
+        List<Apple> apples = appleList();
+        apples.forEach(System.out::println);
+        apples.sort(comparing(Apple::getWeight).reversed().thenComparing(Comparator.comparing(Apple::getWeight)));
+        System.out.println();
+        apples.forEach(System.out::println);
     }
 
     public static boolean isPrime(int number) {

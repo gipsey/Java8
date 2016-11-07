@@ -12,4 +12,11 @@ public class Coffee {
     public Coffee(int i) {
 
     }
+
+
+    public Coffee(int i, String a) {
+
+    }
+
+
 }

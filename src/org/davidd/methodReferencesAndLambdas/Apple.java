@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by David on 10/14/2016.
  */
-public class Apple implements Comparable<Apple> {
+public class Apple {// implements Comparable<Apple> {
 
     private String color;
     private int weight;
@@ -58,10 +58,10 @@ public class Apple implements Comparable<Apple> {
                 '}';
     }
 
-    @Override
-    public int compareTo(Apple o) {
-        return this.getWeight() - o.getWeight();
-    }
+//    @Override
+//    public int compareTo(Apple o) {
+//        return this.getWeight() - o.getWeight();
+//    }
 
     public static int compare(Apple a1, Apple a2) {
         return a1.getWeight() - a2.getWeight();
