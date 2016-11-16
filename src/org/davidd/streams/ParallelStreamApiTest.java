@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * Created by David on 11/7/2016.
  */
-public class StreamApiTest {
+public class ParallelStreamApiTest {
 
     static List<Long> longs;
 

@@ -1,5 +1,7 @@
 package org.davidd;
 
+import org.davidd.streams.StreamApi;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,5 +9,6 @@ public class Main {
 
 //        new MethodReferences();
 //        new Lambdas();
+        new StreamApi();
     }
 }
