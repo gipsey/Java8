@@ -1,5 +1,7 @@
 package org.davidd.methodReferencesAndLambdas;
 
+import org.davidd.Coffee;
+
 import java.util.*;
 import java.util.function.BiFunction;
 import java.util.function.Function;

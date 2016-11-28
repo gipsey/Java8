@@ -1,6 +1,6 @@
 package org.davidd.streams;
 
-import org.davidd.methodReferencesAndLambdas.Coffee;
+import org.davidd.Coffee;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
