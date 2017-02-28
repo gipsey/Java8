@@ -71,7 +71,7 @@ public class ResultSetAsStream {
     }
 
     private static void closeResource(AutoCloseable autoCloseable) {
-        safeExecute(() -> autoCloseable.close());
+//        safeExecute(() -> autoCloseable.close());
     }
 
     @FunctionalInterface
