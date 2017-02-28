@@ -38,7 +38,7 @@ public class Nov28 {
     @Test
     public void test_reduce() {
 //        int i = Coffee.coffeeList()
-//                .stream()
+//                .getBrands()
 //                .reduce(0, (Coffee c) -> 1, Integer::sum);
 //
 //        System.out.println(i);
