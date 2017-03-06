@@ -1,4 +1,4 @@
-package org.davidd;
+package org.davidd.presentation;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.function.Consumer;
 
-public class Feb28 {
+public class Example {
 
     @Test
     public void example1_methodReference() {
